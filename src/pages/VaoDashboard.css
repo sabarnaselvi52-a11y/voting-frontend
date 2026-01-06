@@ -1,0 +1,142 @@
+/* ===============================
+   VAO Dashboard – Govt Style
+   =============================== */
+
+.vao-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #e3f2fd, transparent 60%),
+    radial-gradient(circle at bottom right, #dbeafe, transparent 60%),
+    #f4f7fb;
+  padding: 40px;
+}
+
+.vao-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b3c5d;
+  margin-bottom: 30px;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Card list */
+.vao-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.vao-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(11, 60, 93, 0.18);
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  color: #0b3c5d;
+}
+
+.epic {
+  font-size: 13px;
+  background: #e3f2fd;
+  color: #1c6ea4;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Body */
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.card-body .full {
+  grid-column: span 2;
+}
+
+/* Actions */
+.card-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.approve-btn {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(90deg, #2e7d32, #43a047);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.approve-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(46, 125, 50, 0.45);
+}
+
+.reject-btn {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(90deg, #c62828, #e53935);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reject-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(198, 40, 40, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card-body {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body .full {
+    grid-column: span 1;
+  }
+}

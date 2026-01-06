@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #1f2933;
+}
+
+/* Push content below fixed navbar */
+.main-content {
+  padding-top: 90px;
+}

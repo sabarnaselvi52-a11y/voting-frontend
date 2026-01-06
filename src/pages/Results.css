@@ -1,0 +1,95 @@
+.results-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #eef5fb, #dbe9f4);
+}
+
+.results-card {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  width: 70%;
+  max-width: 900px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s ease;
+}
+
+.results-card h2 {
+  text-align: center;
+  color: #0b4f6c;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.result-box {
+  background: #f8fbff;
+  border: 2px solid #d6e3f0;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.result-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.result-box h3 {
+  font-size: 20px;
+  color: #134e7c;
+  margin-bottom: 10px;
+}
+
+.votes {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.winner {
+  border-color: #2e8b57;
+  background: linear-gradient(135deg, #e7f7ef, #ffffff);
+}
+
+.winner-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #2e8b57;
+  color: white;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.summary {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

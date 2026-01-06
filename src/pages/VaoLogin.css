@@ -1,0 +1,104 @@
+/* ===============================
+   VAO Login – Government Style
+   =============================== */
+
+.vao-login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, #e3f2fd, transparent 60%),
+    radial-gradient(circle at bottom right, #dbeafe, transparent 60%),
+    #f4f7fb;
+  padding: 40px;
+}
+
+/* Login Card */
+.vao-login-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(11, 60, 93, 0.25);
+  text-align: center;
+  animation: fadeUp 0.6s ease;
+}
+
+/* Entry animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.vao-login-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b3c5d;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+/* Error message */
+.error {
+  color: #c62828;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* Inputs */
+.vao-login-card input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.vao-login-card input:hover {
+  border-color: #1c6ea4;
+}
+
+/* Focus (premium glow) */
+.vao-login-card input:focus {
+  outline: none;
+  border-color: #0b3c5d;
+  box-shadow:
+    0 0 0 4px rgba(28, 110, 164, 0.18),
+    0 8px 20px rgba(11, 60, 93, 0.25);
+}
+
+/* Login button */
+.vao-login-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: linear-gradient(
+    90deg,
+    #0b3c5d,
+    #1c6ea4
+  );
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* Hover effect */
+.vao-login-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 35px rgba(11, 60, 93, 0.45);
+}

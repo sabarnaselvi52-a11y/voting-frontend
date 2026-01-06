@@ -1,0 +1,156 @@
+/* ===============================
+   Citizen SIR Page – Govt Style
+   =============================== */
+
+/* Page background */
+.sir-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, #e3f2fd, transparent 60%),
+    radial-gradient(circle at bottom right, #dbeafe, transparent 60%),
+    #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Main card */
+.sir-card {
+  background: #ffffff;
+  width: 920px;
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(11, 60, 93, 0.18);
+  animation: fadeUp 0.6s ease;
+}
+
+/* Entry animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.sir-card h2 {
+  text-align: center;
+  margin-bottom: 34px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0b3c5d;
+  letter-spacing: 0.5px;
+}
+
+/* Grid layout */
+.sir-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* Full-width inputs */
+.sir-grid .full {
+  grid-column: span 2;
+}
+
+/* ===============================
+   Inputs & Selects (Advanced)
+   =============================== */
+
+.sir-grid input,
+.sir-grid select {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #1f2933;
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+/* Hover effect */
+.sir-grid input:hover,
+.sir-grid select:hover {
+  border-color: #1c6ea4;
+  box-shadow: 0 6px 16px rgba(28, 110, 164, 0.15);
+  transform: translateY(-1px);
+  background-color: #fcfdff;
+}
+
+/* Focus effect (premium glow) */
+.sir-grid input:focus,
+.sir-grid select:focus {
+  outline: none;
+  border-color: #0b3c5d;
+  box-shadow:
+    0 0 0 4px rgba(28, 110, 164, 0.18),
+    0 8px 20px rgba(11, 60, 93, 0.25);
+  transform: translateY(-1px);
+  background-color: #ffffff;
+}
+
+/* Placeholder styling */
+.sir-grid input::placeholder {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* ===============================
+   Submit Button (Premium)
+   =============================== */
+
+.submit-btn {
+  margin-top: 36px;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(
+    90deg,
+    #0b3c5d,
+    #1c6ea4
+  );
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Button hover */
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(11, 60, 93, 0.45);
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 768px) {
+  .sir-card {
+    width: 100%;
+    padding: 28px;
+  }
+
+  .sir-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sir-grid .full {
+    grid-column: span 1;
+  }
+}
